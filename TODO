@@ -1,0 +1,5 @@
+Add bootloader(GRUB or something)
+Add more syscalls
+Create package manager
+Make ex work(unnecessary because there is texor)
+Write documentation

@@ -1,0 +1,1 @@
+/src is a directory, where source code of Andesaurux is stored
