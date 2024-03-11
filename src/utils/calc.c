@@ -28,22 +28,23 @@ main(void)
   switch(c)
     {
       case '+':
-	printf("%lld+%lld=%lld", a, b, a+b);
-	break;
+	      printf("%lld+%lld=%lld", a, b, a+b);
+	      break;
       case '-':
-	printf("%lld-%lld=%lld", a, b, a-b);
-	break;
+	      printf("%lld-%lld=%lld", a, b, a-b);
+	      break;
       case '*':
-	printf("%lld*%lld=%lld", a, b, a*b);
-	break;
+	      printf("%lld*%lld=%lld", a, b, a*b);
+	      break;
       case '/':
-	printf("%lld/%lld=%lld", a, b, a/b);
-	break;
+	      printf("%lld/%lld=%lld", a, b, a/b);
+	      break;
       case '^':
-      printf("%lld^%lld=%lld", a, b, exponent(a, b));
+            printf("%lld^%lld=%lld", a, b, exponent(a, b));
+            break;
       default:
-	printf("%c - WTF?!", c);
-	break;
+	      printf("%c - invalid symbol\n", c);
+	      break;
     }
   putchar('\n');
   return (0);

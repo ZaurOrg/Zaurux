@@ -1,0 +1,1 @@
+/mnt is directory that is used to mount devices to it.

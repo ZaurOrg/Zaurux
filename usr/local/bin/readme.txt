@@ -1,0 +1,1 @@
+/usr/local/bin is directory that stores user-installed software available only for one user

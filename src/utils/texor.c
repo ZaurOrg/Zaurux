@@ -102,12 +102,12 @@ struct editorConfig E;
 
 /*** filetypes ***/
 
-char *C_HL_extensions[] = { ".c", ".h", ".cpp", ".hpp", NULL };
+char *C_HL_extensions[] = {".c", ".h", ".cpp", ".hpp", ".c++", ".h++", ".hxx", ".cc", ".cxx",  NULL};
 char *C_HL_keywords[] = {
   "switch", "if", "while", "for", "break", "continue", "return", "else",
   "struct", "union", "typedef", "static", "enum", "class", "case",
   "int|", "long|", "double|", "float|", "char|", "unsigned|", "signed|",
-  "void|", "FILE|", "__asm__", "asm", "volatile", "_Bool", "bool", NULL
+  "void|", "FILE|", "__asm__", "asm", "volatile", "_Bool|", "bool|", "#include", "system", NULL
 };
 
 char *RUBY_HL_extensions[] = { ".rb", NULL };
@@ -1069,23 +1069,25 @@ void initEditor() {
   E.screen_rows -= 2;
 }
 int main(int argc, char **argv) {
-  enableRawMode();
-  initEditor();
   if (argc < 2)
   {
-    // DO NOTHING \_(ツ)_/
+    enableRawMode();
+    initEditor();
   }
   if (argc >= 2) 
-  {
+  {  
+    enableRawMode();
+    initEditor();
     editorOpen(argv[1]);
   }
   if (fopen(argv[1], "r+") == NULL && argc >= 2)
   {
-     FILE *f = fopen(argv[1], "w");
-     editorOpen(argv[1]);
+    enableRawMode();
+    initEditor();
+    FILE *f = fopen(argv[1], "w");
+    editorOpen(argv[1]);
   }  
-  editorSetStatusMessage(
-      "HELP: Ctrl-S = save | Ctrl-Q = quit | Ctrl-F = find");
+  editorSetStatusMessage("HELP: Ctrl-S = save | Ctrl-Q = quit | Ctrl-F = find");
   while (1) {
     editorRefreshScreen();
     editorProcessKeypress();

@@ -1,6 +1,0 @@
-pkgm is a package manager for Andesaurux operating system.
-It downloads the source code of the package(or binaries) and compiles them.
-Then it moves binaries to the folder where the binaries for programs are located.
-pkgm is very simple and portable.
-
-    PKGM HAS COW SUPERPOWER.

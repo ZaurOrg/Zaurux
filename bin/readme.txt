@@ -1,1 +1,1 @@
-This is a folder for binary files
+Here essential binaries are stored for single user mode
