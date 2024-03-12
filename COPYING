@@ -1,7 +1,0 @@
-AndeUtils(all files in /src/utils except for files protected under other licenses) are protected by Modified BSD license
-
-  /LICENSES/COPYING.bsd3.txt
-
-Kernel(/src/kern) is protected under GNU GPL v3-or-later
-
-  /LICENSE/COPYING.gpl.txt
