@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+typedef char* str_t;
+typedef long long lolong_t;
+typedef void n_t;
+
+n_t getin(char *);
+n_t println(char *);
+int getnum(int);
+long long getlnum(lolong_t);
+double getdouble(double);
+int setrand(int, int);
+
+#define endl '\n'

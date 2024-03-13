@@ -1,6 +1,11 @@
 #include <stdio.h>
 
-int main(int argc, char **argv)
+#define failure -1
+#define success 0
+#define both_failed -32768
+
+int 
+main(int argc, char **argv)
 {
   if (argc < 4)
   {
@@ -13,9 +18,9 @@ int main(int argc, char **argv)
         return (0);
       }
     while ((c = getc(f)) != EOF)
-     {
-       putchar(c);
-     }
+      {
+        putchar(c);
+      }
     fclose(f);
     c = 0;
     putchar('\n');
@@ -30,20 +35,20 @@ int main(int argc, char **argv)
       {
         printf("Error! No such file!\n");
         fclose(f);
-        return -1;
+        return failure;
       }
-    if (!f2)
+      if (!f2)
       {
         printf("Error! No such file!\n");
         fclose(f);
-        return -1;
+        return failure;
       }
-    if (!f && !f2)
+     if (!f && !f2)
       {
         printf("Error! Both files doesn't exist!\n");
         fclose(f);
         fclose(f2);
-        return -2;
+        return both_failed;
       }
     while ((c = getc(f)) != EOF)
       {
@@ -58,7 +63,7 @@ int main(int argc, char **argv)
   else
   {
     printf("You forgot to put '>' before the file name.\n");
-    return -1;
+    return failure;
   }
-  return 0;
+  return success;
 }

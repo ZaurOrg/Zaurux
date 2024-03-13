@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <time.h>
 
-
 int main(int argc, char **argv)
 {
   puts("\t\tRandom numbers\n\t\tv0.0.1\n");
