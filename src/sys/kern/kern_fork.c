@@ -1,4 +1,4 @@
-#include "../../include/syscall.h"
+#include "syscall.h"
 
 pid_t fork() 
 {

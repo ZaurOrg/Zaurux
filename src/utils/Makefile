@@ -48,9 +48,9 @@ timer:
 
 
 install:	calc cat charch collatz echo ex hq9p listis ls multiply random tar texor wc touch minian pkgm clear memory timer
-	mv calc cat charch collatz echo ex hq9p listis ls multiply random tar texor wc touch minian pkgm clear ../../bin/
+	mv calc cat charch collatz echo ex hq9p listis ls multiply random tar texor wc touch minian pkgm clear ../../usr/bin/
 	mv memory ../../usr/bin/games/memory
 	mv timer ../../usr/bin/timer
 
 clean:
-	rm -f ../../bin/calc ../../bin/cat ../../bin/charch ../../bin/collatz ../../bin/echo ../../bin/ex ../../bin/hq9p ../../bin/listis ../../bin/ls ../../bin/multiply ../../bin/random ../../bin/tar ../../bin/texor ../../bin/wc ../../bin/touch ../../bin/minian ../../bin/pkgm ../../bin/clear ../../usr/bin/games/memory ../../usr/bin/timer
+	rm -f ../../usr/bin/calc ../../usr/bin/cat ../../usr/bin/charch ../../usr/bin/collatz ../../usr/bin/echo ../../usr/bin/ex ../../usr/bin/hq9p ../../usr/bin/listis ../../usr/bin/ls ../../usr/bin/multiply ../../usr/bin/random ../../usr/bin/tar ../../usr/bin/texor ../../usr/bin/wc ../../usr/bin/touch ../../usr/bin/minian ../../usr/bin/pkgm ../../usr/bin/clear ../../usr/bin/games/memory ../../usr/bin/timer
