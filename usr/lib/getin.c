@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <string.h>
 #include "exio.h"
-void getin(char *s)
+void agets_s(char *s)
 {
-  fgets(s, sizeof(s)-1, stdin);
-  s[strlen(s) - 1] = '\0';
+  gets_s(s, sizeof(s)-1);
+  return;
 }

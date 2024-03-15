@@ -1,1 +1,0 @@
-Here essential binaries are stored for single user mode
