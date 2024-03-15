@@ -8,7 +8,8 @@
 
 #define BUFFER_LEN 1024
 
-int main(){
+int main()
+{
     char user_input[BUFFER_LEN];  //get command line
     char* argv[120]; //user command
     int argc ; //argument count
