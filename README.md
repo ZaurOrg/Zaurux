@@ -8,7 +8,7 @@ Zaurux uses microkernel which just allocates resources to the programs, all
 other system things do the servers and init system.
 
 # Package control
-To download, remove and upgrade packages, use ´´´zpkg´´´ command.
+To download, remove and upgrade packages, use `zpkg` command.
 Zpkg is package manager for Unix-like operating systems.
 **IN DEVELOPMENT**
 
