@@ -1,14 +1,25 @@
 # Zaurux
-Unix-compatible free(as in freedom) OS that will be fully free(as in freedom).
+Unix-compatible libre OS that will be fully libre.
 
 Because this is a free software, you can help with development.
 
+# Microkernel
+Zaurux uses microkernel which just allocates resources to the programs, all 
+other system things do the servers and init system.
+
+# Package control
+To download, remove and upgrade packages, use ´´´zpkg´´´ command.
+Zpkg is package manager for Unix-like operating systems.
+**IN DEVELOPMENT**
+
+# License
+Zaurux is protected under GNU GPL v3-or-later
 
 ### LAST RELEASE: none
 
 
         Zaurux, simple OS
-        Copyright (C) 2024  GNUAn
+        Copyright (C) 2024  ZaurOrg
 
         This program is free software: you can redistribute it and/or modify
         it under the terms of the GNU General Public License as published by
